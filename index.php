@@ -51,7 +51,7 @@ session_start();
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" placeholder="Digite sua senha">
             <br>
-            <a href="https://wa.me/5516991486026?text=Ol%C3%A1%2C%20quero%20utilizar%20o%20sistema%20da%20Ruby%20na%20minha%20empresa!%20%F0%9F%98%81">Contato</a>
+            <a href="https://wa.me/5516991486026?text=Ol%C3%A1%2C%20quero%20utilizar%20o%20sistema%20da%20Ruby%20na%20minha%20empresa!%20%F0%9F%98%81", target="_blank">Contato</a>
             <!-- Botão de submissão do formulário -->
             <button type="submit" class="btn">ENTRAR</button>
         </form>
