@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <!-- Importação do arquivo CSS específico para a página de escolha -->
+    <link rel="stylesheet" href="escolha.css">
+</head>
+
+<body>
+    <!-- Botão de saída posicionado no topo da página -->
+    <!-- Permite ao usuário retornar à página de login -->
+<button onclick="window.location.href='index.php'"; class="exit-btn">Exit</button>
+    
+    <!-- Linha horizontal para separação visual -->
+    <hr>
+
+    <!-- Container principal que organiza as opções disponíveis -->
+    <div class="container">
+        <!-- Primeira opção: Cadastro de produtos -->
+        <div class="opcao">
+            <!-- Título da funcionalidade -->
+            <h3 class="nome">Cadastro</h3>
+            <!-- Botão que direciona para a página de cadastro -->
+            <button onclick="window.location.href='cadastro.html';" class="sair">Register</button>
+        </div>
+
+        <!-- Segunda opção: Visualização do estoque -->
+        <div class="opcao">
+            <!-- Título da funcionalidade -->
+            <h3 class="nome">Estoque</h3>
+            <!-- Botão que direciona para a página de estoque -->
+            <button onclick="window.location.href='estoque.php';" class="sair">Stock</button>
+        </div>
+    </div>
+</body>
+
+</html>

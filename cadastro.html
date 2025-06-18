@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js"></script>
+</head>
+<body>
+    <button onclick="window.location.href='escolha.html';" class="exit-btn">Exit</button>
+    <hr>
+    <div>
+        <form action="cadastro.php" method="POST" enctype="multipart/form-data"><!--enctype="multipart/form-data" no formulário (essencial para upload de arquivos)-->
+            <label for="name">Name*:</label>
+            <input type="text" id="name" name="name" required><br><!--Usei required no HTML para validação inicial no navegador.-->
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" onchange="previewImage(event)"><br><!--accept="image/*" para limitar a seleção apenas a arquivos de imagem-->
+            <img id="imagePreview" alt="Preview da imagem"><br>
+
+            <label for="validity">Expiration Date*:</label>
+            <input type="date" id="validity" name="validity" required><br>
+            
+            <label for="fabrications">Fabrication Date*:</label>
+            <input type="date" id="fabrications" name="fabrications" required><br>
+
+            <label for="fabricate">Fabricate*:</label>
+            <input type="text" name="fabricate" id="fabricate" required>
+
+            <label for="lote">Lote*:</label>
+            <input type="number" name="lote" id="lote" min="0" max="25" required>
+
+            <label for="unidade">Unidade*:</label>
+            <input type="number" name="unidade" id="unidade" min="0" max="1000" required>
+
+            <label for="description">Description:</label><br>
+            <textarea name="description" id="description"></textarea><br>
+
+            <div class="form-buttons">
+                <button type="submit" class="btn" name="submit" onclick="return confirmSubmit()">Register Products</button>
+                <button onclick="window.location.href='estoque.php';" class="stock-btn">Stock</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
